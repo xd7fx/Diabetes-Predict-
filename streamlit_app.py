@@ -47,7 +47,7 @@ st.markdown(
     """
     <style>
     .main {
-        background-image: url("");
+        background-image: url("https://github.com/xd7fx/Diabetes-Predict-/blob/master/image_2024-11-01_021114655.png");
         background-size: cover;
         background-position: center;
     }
