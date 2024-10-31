@@ -40,8 +40,8 @@ The app compares the performance of various machine learning models to select th
 ## 📚 Further Reading
 
 For more details on diabetes and machine learning approaches to predict it, check out these resources:
-- [Machine Learning for Diabetes Prediction](https://example.com)
+- [Machine Learning for Diabetes Prediction](https://scikit-learn.org/stable/supervised_learning.html)
 - [Streamlit Documentation](https://docs.streamlit.io/)
-- [Understanding Logistic Regression](https://example.com)
+- [Dataset](https://github.com/xd7fx/Diabetes-Predict-/blob/master/diabetes.csv)
 
 Enjoy predicting diabetes risk with ease! 🚑
