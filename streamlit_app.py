@@ -42,37 +42,11 @@ else:
     result_positive = "🔴 النموذج يتوقع أن الشخص لديه السكري."
     result_negative = "🟢 النموذج يتوقع أن الشخص ليس لديه السكري."
 
-# Add background image using CSS
-st.markdown(
-    """
-    <style>
-    .main {
-        background-image: url("https://github.com/xd7fx/Diabetes-Predict-/blob/master/image_2024-11-01_021114655.png");
-        background-size: cover;
-        background-position: center;
-    }
-    h1 {
-        color: #3d3c3a;
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-    }
-    .stButton>button {
-        color: white;
-        background-color: #4CAF50;
-        border-radius: 8px;
-        padding: 10px 24px;
-        font-size: 16px;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Title and instructions
+# Display title and instructions
 st.title(title)
 st.subheader(instructions)
 
-# Divide input fields into columns
+# Divide the input fields into columns
 col1, col2 = st.columns(2)
 
 with col1:
@@ -87,7 +61,7 @@ with col2:
     bmi = st.number_input(fields["bmi"], min_value=0.0)
     age = st.number_input(fields["age"], min_value=0, step=1)
 
-# Collect input data
+# Collect the input data
 input_data = [pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree_function, age]
 
 # Prediction result
@@ -98,7 +72,7 @@ if st.button(predict_button):
     input_data = np.asarray(input_data).reshape(1, -1)
     prediction = model.predict(input_data)
     
-    # Display result based on prediction
+    # Display the result based on the prediction
     result = result_positive if prediction[0] == 1 else result_negative
 
 # Display prediction result
