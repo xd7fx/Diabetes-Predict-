@@ -47,7 +47,7 @@ st.markdown(
     """
     <style>
     .main {
-        background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.iaea.org%2Far%2Fnewscenter%2Fnews%2Ftshkhys-mdft-mrd-lskry-blstn-bltb-lnwwy&psig=AOvVaw3WW0pdKZpS-YJvMCvAoLxe&ust=1730502499063000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCxoqfeuYkDFQAAAAAdAAAAABAn");
+        background-image: url("");
         background-size: cover;
         background-position: center;
     }
